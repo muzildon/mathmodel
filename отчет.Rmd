@@ -47,7 +47,7 @@ set.seed(my.seed)
 inTrain <- sample(seq_along(x), size = train.percent*n.all)
 
 # истинная функция взаимосвязи
-y.func <- function(x) {12-0.05*x}
+y.func <- function(x) {8+3.5*cos(x-30)/12}
 
 # для графика истинной взаимосвязи
 x.line <- seq(x.min, x.max, length = n.all)
@@ -301,7 +301,7 @@ inTrain <- sample(seq_along(x),
 
 
 # истинная функция взаимосвязи 
-y.func <- function(x) {12-0.05*x}
+y.func <- function(x) {8+3.5*cos(x-30)/12}
 
 # для графика истинной взаимосвязи
 x.line <- seq(x.min, x.max, length = n.all)
